@@ -6,3 +6,5 @@ fastapi
 pytest
 requests
 uvicorn
+pytest
+httpx
