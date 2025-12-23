@@ -1,4 +1,10 @@
+# For FastAPI testing
+pytest
 fastapi
+httpx
+fastapi
+pytest
+requests
 uvicorn
 pytest
 httpx
