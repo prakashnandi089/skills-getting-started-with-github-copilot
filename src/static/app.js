@@ -55,8 +55,14 @@ document.addEventListener("DOMContentLoaded", () => {
       const response = await fetch("/activities");
       const activities = await response.json();
 
+
       // Clear loading message
       activitiesList.innerHTML = "";
+
+      // Clear activity dropdown except placeholder
+      while (activitySelect.options.length > 1) {
+        activitySelect.remove(1);
+      }
 
       // Populate activities list
       Object.entries(activities).forEach(([name, details]) => {
